@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Developer</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a  href="#" class="navbar-brand d-flex align-items-center" title="Isotipo">
+                    <span class="isotipo text-white text-decoration-none">M</span>
+                    <span class="text-white text-uppercase fw-bold isotipo-name">Mariana Developer</span>
+                </a>
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+
+                <!-- Menú principal -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-lg-auto flex-lg-row flex-column">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <!-- Submenú Blog -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                                <li><a class="dropdown-item" href="#">Diseño Web</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Marketing</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">SEO</a></li>
+                                        <li><a class="dropdown-item" href="#">Publicidad</a></li>
+                                        <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Branding</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="colorsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Theme Colors</a>
+                            <ul class="dropdown-menu" aria-labelledby="colorsDropdown">
+                                <li class="text-center"><input type="button" value="Original" class="theme-btn btn w-75 my-1 text-white text-uppercase fs-7 fw-bold border-light border-1" data-theme="" style="background:#f28cd9;" title="Original"></li>
+                                <li class="text-center"><input type="button" value="Blue Light" class="theme-btn btn w-75 my-1 text-white text-uppercase fs-7 fw-bold border-light border-1" data-theme="theme-bluelight" style="background:#1976d2;" title="Blue Light"></li>
+                                <li class="text-center"><input type="button" value="Dark" class="theme-btn btn w-75 my-1 text-light text-uppercase fs-7 fw-bold border-light border-1" data-theme="theme-dark" style="background:#212121;" title="Oscuro"></li>
+                                <li class="text-center"><input type="button" value="Ocean" class="theme-btn btn w-75 my-1 text-white text-uppercase fs-7 fw-bold border-light border-1" data-theme="theme-ocean" style="background:#0277bd;" title="Ocean"></li>
+                                <li class="text-center"><input type="button" value="Light" class="theme-btn btn w-75 my-1 text-dark text-uppercase fs-7 fw-bold border-dark border-1" data-theme="theme-light" style="background:#ffffff;" title="Light"></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Íconos sociales -->
+                    <div class="bottom-social mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-behance"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="social-media position-fixed d-flex justify-content-center align-items-center top-0 z-1">
+            <div class="social-networks text-center">
+                <a href="#" class="social-icon instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon tiktok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon youtube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-facebook" viewBox="-337 273 123.5 256">
+                        <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-linkedin" viewBox="-271 283.9 256 235.1">
+                        <g>
+                            <rect x="-264.4" y="359.3" width="49.9" height="159.7"/>
+                            <path d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7C-210.8,295.8-222.1,283.9-240.5,283.9z"/>
+                            <path d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"/>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon twitter-x">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon github">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <section id="section-1" class="d-flex flex-column align-items-center justify-content-center position-relative section-1">
+            <div class="row flex-lg-row flex-column-reverse">
+                <div class="col-lg-6 position-relative d-flex justify-content-center pt-lg-5">
+                    <img src="img/section-001.png" alt="Imagen de ejemplo" class="img-blur img-fluid">
+                </div>
+                <div class="col-lg-6 d-flex align-items-center pt-5 mt-5 mt-lg-0">
+                    <div class="shadowlg p-2 position-relative overlap-text" style="width: 100%;">
+                        <p class="text-white fw-bold text-uppercase fulljustify text-nowrap font-creative">C R E A T I V E</p>
+                        <p class="text-white fw-bold text-uppercase fulljustify text-nowrap font-developer">D E V E L O P E R</p>
+                        <p class="text-white fw-bold text-uppercase fulljustify text-nowrap font-developer">F U L L - S T A C K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-0 d-block w-100 container-page-number">
+                <div class="col-lg-12 ps-0">
+                    <div class="pb-5">
+                        <span class="fw-bold text-white page-number">01</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section-2" class="position-relative section-2">
+            <div class="row pt-5">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-center text-white text-uppercase my-lg-5 border-bottom border-white border-1 d-inline-block">Abilities</h2>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-lg-7 abilities">
+                    <div class="row margin-left-35">
+                        <div class="col-12">
+                            <h2 class="text-white text-nowrap text-developer">I AM A FRONT END DEVELOPER</h2>
+                            <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                    <div class="row margin-left-35">
+                        <div class="col-12">
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold csharp">C#</div>
+                            </div>
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold java">Java</div>
+                            </div>
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold javascript">Javascript</div>
+                            </div>
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold html">HTML</div>
+                            </div>
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold css">CSS</div>
+                            </div>
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold sql">SQL</div>
+                            </div>
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold mysql">MySQL</div>
+                            </div>
+                            <div class="progress my-4 abilitie">
+                                <div class="progress-bar bg-white text-dark fw-bold postgresql">PostgreSQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 position-relative d-flex justify-content-center justify-content-lg-end m-auto">
+                    <img src="img/section-002.png" alt="Imagen de ejemplo" class="img-blur img-fluid">
+                </div>
+            </div>
+
+            <div class="row bottom-0 d-block w-100 container-page-number">
+                <div class="col-lg-12">
+                    <div class="pb-5">
+                        <span class="fw-bold text-white page-number">02</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-3" class="row flex-column align-items-center justify-content-center position-relative section-3">
+            <div class="row pt-5">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-center text-white text-uppercase mb-3 mb-lg-5 border-bottom border-white border-1 d-inline-block">Portfolio</h2>
+                    <p class="text-white text-justify margin-inline-35">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+            <div id="carousel-portfolio" class="carousel slide carousel-portfolio d-flex" data-bs-ride="carousel">
+                <div class="row carousel-inner margin-inline-35">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-1.png" alt="Image 1" class="img-fluid-100">
+                                    <div class="project-info">
+                                        <h3>Proyecto 1</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-2.png" alt="Image 2" class="img-fluid-100">
+                                </div>
+                            </div>
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-3.png" alt="Image 2" class="img-fluid-100">
+                                </div>
+                            </div>
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-4.png" alt="Image 2" class="img-fluid-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-1.png" alt="Image 1" class="img-fluid-100">
+                                </div>
+                            </div>
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-2.png" alt="Image 2" class="img-fluid-100">
+                                </div>
+                            </div>
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-3.png" alt="Image 2" class="img-fluid-100">
+                                </div>
+                            </div>
+                            <div class="col-12- col-sm-5 col-lg-3 d-flex justify-content-center my-2">
+                                <div class="card border-0 img-fluid-slider">
+                                    <img src="img/project/project-4.png" alt="Image 2" class="img-fluid-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row position-relative align-self-center carousel-controls">
+                    
+                    <button class="carousel-control-prev carousel-control-arrow-left" type="button" data-bs-target="#carousel-portfolio" data-bs-slide="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                        </svg>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-control-arrow-right" type="button" data-bs-target="#carousel-portfolio" data-bs-slide="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row bottom-0 d-block w-100 container-page-number">
+                <div class="col-lg-12 ps-0">
+                    <div class="pb-5">
+                        <span class="fw-bold text-white page-number">03</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="section-4" class="container p-5 border-top border-white border-1">
+        <div class="footer-links row d-flex justify-content-between">
+            <div class="col-12 col-sm-4 d-flex align-items-center flex-column mb-3">
+                <h3 class="footer-title text-white text-uppercase fs-6 border-bottom border-white border-1">Nosotros</h3>
+                <ul>
+                    <li><a href="" class="fw-light">About</a></li>
+                    <li><a href="" class="fw-light">Portfolio</a></li>
+                    <li><a href="" class="fw-light">Contact</a></li>
+                    <li><a href="" class="fw-light">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-12 col-sm-4 d-flex align-items-center flex-column mb-3">
+                <h3 class="footer-title text-white text-uppercase fs-6 border-bottom border-white border-1">Contact</h3>
+                <ul>
+                    <li><a href="" class="fw-light">Tiktok 1</a></li>
+                    <li><a href="" class="fw-light">Tiktok 2</a></li>
+                    <li><a href="" class="fw-light">Instagram</a></li>
+                    <li><a href="" class="fw-light">Facebook</a></li>
+                    <li><a href="" class="fw-light">Youtube</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social col-12 col-sm-4 d-flex align-items-center flex-column">
+                <h3 class="footer-title text-white text-uppercase fs-6 border-bottom border-white border-1">Social</h3>
+
+                <div class="row my-1">
+                    <div class="col-12">
+                        <a href="#" class="footer-social-link instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link tiktok">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row my-1">
+                    <div class="col-12">
+                        <a href="#" class="footer-social-link facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-facebook" viewBox="-337 273 123.5 256">
+                                <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-linkedin" viewBox="-271 283.9 256 235.1">
+                                <g>
+                                    <rect x="-264.4" y="359.3" width="49.9" height="159.7"/>
+                                    <path d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7C-210.8,295.8-222.1,283.9-240.5,283.9z"/>
+                                    <path d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row my-1">
+                    <div class="col-12">
+                        <a href="#" class="footer-social-link twitter-x">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="d-block text-center mt-5 fs-7">
+            <span class="footer-copy text-white text-uppercase fw-light">&copy; <span id="copyright-year"></span> Todos los Derechos Reservados. Diseñado por <a href="https://mariana.developer.github.io/" target="_blank" class="text-white text-decoration-none">Mariana Developer</a></span>
+        </div>
+    </footer>
+    
+    <div id="scroll-buttons-container">
+        <!-- Botón Scroll Down -->
+        <div id="scrollDownBtn" class="scroll-btn d-flex align-items-center text-uppercase">
+            Scroll Down
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down mt-3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+            </svg>
+        </div>
+        <!-- Botón Scroll Up -->
+        <div id="scrollUpBtn" class="scroll-btn d-flex align-items-center text-uppercase">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up mb-3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+            </svg>
+            Go To Top
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const body = document.body;
+        const collapse = document.getElementById('menuPrincipal');
+
+        // Bloquear scroll cuando se abre el menú lateral
+        collapse.addEventListener('show.bs.collapse', () => body.classList.add('offcanvas-active'));
+        collapse.addEventListener('hidden.bs.collapse', () => body.classList.remove('offcanvas-active'));
+
+        // Evitar cierre de dropdowns en mobile
+        document.querySelectorAll('.nav-item.dropdown').forEach(dd => {
+            dd.addEventListener('hide.bs.dropdown', e => {
+                if (collapse.classList.contains('show')) e.preventDefault();
+            });
+        });
+
+        // 🔹 Permitir abrir submenús anidados en mobile
+        document.querySelectorAll('.dropdown-submenu > a').forEach(link => {
+            link.addEventListener('click', e => {
+                if (window.innerWidth < 992) {
+                    e.preventDefault();
+                    const submenu = link.parentElement;
+                    submenu.classList.toggle('open');
+                }
+            });
+        });
+
+        // Restablecer menú al cambiar entre mobile/desktop o rotar dispositivo
+        const cleanDropdowns = () => {
+            if (window.innerWidth >= 992) {
+                collapse.classList.remove('show');
+                body.classList.remove('offcanvas-active');
+                document.querySelectorAll('.dropdown.show, .dropdown-menu.show, .dropdown-submenu.open')
+                    .forEach(el => el.classList.remove('show', 'open'));
+            }
+        };
+
+        window.addEventListener('resize', cleanDropdowns);
+        window.addEventListener('orientationchange', cleanDropdowns);
+    </script>
+    <script>
+    const themeButtons = document.querySelectorAll('.theme-btn');
+
+    // Cambiar tema
+    themeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+        const selectedTheme = btn.dataset.theme;
+        document.body.className = selectedTheme;
+        localStorage.setItem('selectedTheme', selectedTheme);
+        });
+    });
+
+    // Restaurar tema guardado
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('selectedTheme');
+        if (savedTheme) document.body.className = savedTheme;
+    });
+    </script>
+</body>
+</html>
